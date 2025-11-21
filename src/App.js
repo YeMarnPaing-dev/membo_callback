@@ -3,6 +3,15 @@ import React, { useState } from 'react'
 const App = () => {
   const [color,setColor] = useState("red")
   const [count,setCount] = useState(0)
+
+  const delayCall = (num)=> {
+    console.log('delay time runnging....');
+    for(let i = 0; i<10000000;i++){
+       num++;
+    }
+    return num;    
+  }
+  delayCall()
   return (
     <div>App
       <h3 style={{'color': color}}>useState Test</h3>
