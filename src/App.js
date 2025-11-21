@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 const App = () => {
   const [color,setColor] = useState("red")
@@ -11,7 +11,9 @@ const App = () => {
     }
     return num;    
   }
-  delayCall()
+  // delayCall()
+
+  useMemo(()=> delayCall(count),[color])
   return (
     <div>App
       <h3 style={{'color': color}}>useState Test</h3>
