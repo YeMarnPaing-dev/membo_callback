@@ -19,7 +19,7 @@ const ReactRouter = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/product" element={<Product/>}/>
-        <Route path="/product/:id" element={<Item/>}/>
+        <Route path="/product/:name" element={<Item/>}/>
       </Routes>
     </div>
   );

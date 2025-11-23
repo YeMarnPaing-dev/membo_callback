@@ -1,9 +1,17 @@
 import React from 'react'
+import { useLocation, useParams } from 'react-router'
 
 const Item = () => {
+     const {name} = useParams('');
+    
+     const location = useLocation();
+     console.log(location);
+     
   return (
+   
+    
     <div>
-        This is Product Details
+        <h1>{name}</h1>
     </div>
   )
 }
