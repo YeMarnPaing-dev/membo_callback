@@ -22,7 +22,6 @@ const Callback = () => {
   return (
     <div>Callback
         <Lists items={item} addNewItem={addNewItem}/>
-
         <h1>{count}</h1>
        <button onClick={()=> setCount(count-1)}>-</button>
       <button onClick={()=> setCount(count+1)}>+</button>
