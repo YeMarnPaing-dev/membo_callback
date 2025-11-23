@@ -4,8 +4,8 @@ import { useLocation, useParams } from 'react-router'
 const Item = () => {
      const {name} = useParams('');
     
-     const location = useLocation();
-     console.log(location);
+    //  const location = useLocation();
+    //  console.log(location);
      
   return (
    

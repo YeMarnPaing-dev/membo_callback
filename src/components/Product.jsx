@@ -4,23 +4,23 @@ import { Link } from 'react-router'
 const Product = () => {
   return (
     <div>
-        <Link>
-        Item 1
+        <Link to="/product/yemarn">
+    YeMarn
         </Link>
         <br />
 
-        <Link>
-        Item 2
+        <Link to="/product/myint myat san">
+        MyintMyatSawn
         </Link>
          <br />
 
-        <Link>
-        Item 3
+        <Link to="/product/shunnLae">
+        ShunnLae
         </Link>
          <br />
 
-        <Link>
-        Item 4
+        <Link to="/product/thiri">
+        Thiri
         </Link>
     </div>
   )
